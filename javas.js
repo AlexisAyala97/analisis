@@ -44,7 +44,7 @@ function calcular(){
         Er=999;
     }    
     n++;
-    }while(n==3);
+    }while(n<3);
     
     tab.innerHTML=acum;
 }
