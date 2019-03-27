@@ -17,7 +17,7 @@ function calcular(){
     var acum=" ";
     do{
     ax=(parseFloat(an)+parseFloat(bn))/2;
-    f=f.replace("x",ax);
+    f=f.replace("x","*"+ax);
     fp=eval(f);
     if(n==1){
         Er=0;
