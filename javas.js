@@ -14,7 +14,7 @@ function calcular(){
     bn=document.getElementById("bn").value;
     f=document.getElementById("fn").value;
     tol=parseFloat(Math.pow(10,-document.getElementById("tol").value));
-    criterio = "ER";//document.getElementById("crit").value;
+    
     do{
     ax=(parseFloat(an)+parseFloat(bn))/2;
     f=f.replace("x^2","*x*x");
@@ -31,7 +31,7 @@ function calcular(){
     }
     Pn=ax;
     tab=document.getElementById("contenido");
-    tab.innerHTML= f+"<tr> <th scope='row'>"+n+"</th>"+
+    tab.innerHTML+= f+"<tr> <th scope='row'>"+n+"</th>"+
     "<td>"+an+"</td><td>"+bn+"</td>"+
     "<td>"+Pn+"</td><td>"+fp+"</td>"+
     "<td>"+Er+"</td></tr>";
