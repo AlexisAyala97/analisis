@@ -19,8 +19,8 @@ function calcular(){
     do{
     ax=(parseFloat(an)+parseFloat(bn))/2;
     f2=f.replace("x^3","xxx");
-    f2=f.replace("x^2","xx");
-    f2=f.replace("x",'*'+ax);
+    f2=f2.replace("x^2","xx");
+    f2=f2.replace("x",'*'+ax);
     fp=eval(f2);
     if(n==1){
         Er=0;
