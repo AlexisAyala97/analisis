@@ -17,7 +17,7 @@ function calcular(){
     var acum=" ";
     do{
     ax=(parseFloat(an)+parseFloat(bn))/2;
-    f=f.replace("x","*"+ax);
+    f=f.replace("x",ax);
     fp=eval(f);
     if(n==1){
         Er=0;
@@ -27,7 +27,7 @@ function calcular(){
     Pn=ax;
     
     tab=document.getElementById("contenido");
-    
+    alert(f);
     acum+= "<tr> <th scope='row'>"+n+"</th>"+
     "<td>"+an+"</td><td>"+bn+"</td>"+
     "<td>"+ax+"</td><td>"+fp+"</td>"+
@@ -39,7 +39,7 @@ function calcular(){
     }else{
         an=ax;
     }
-     alert(n);
+     
     if(n==1){
         Er=999;
     }    
