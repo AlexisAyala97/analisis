@@ -14,7 +14,6 @@ function calcular(){
     bn=document.getElementById("bn").value;
     f=document.getElementById("fn").value;
     tol=parseFloat(Math.pow(10,-document.getElementById("tol").value));
-    criterio = document.getElementById("crit").value;
     var acum=" ";
     do{
     ax=(parseFloat(an)+parseFloat(bn))/2;
