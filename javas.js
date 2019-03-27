@@ -8,6 +8,7 @@ var fp=0;
 var tol=0;
 var criterio;
 var ax=0;
+var f2;
 var tab=document.getElementById("contenido");
 function calcular(){
     an=document.getElementById("an").value;
@@ -17,8 +18,8 @@ function calcular(){
     var acum=" ";
     do{
     ax=(parseFloat(an)+parseFloat(bn))/2;
-    fp=f.replace("x",'*'+ax);
-    fp=eval(fp);
+    f2=f.replace("x",'*'+ax);
+    fp=eval(f2);
     if(n==1){
         Er=0;
     }else{
@@ -27,7 +28,7 @@ function calcular(){
     Pn=ax;
     
     tab=document.getElementById("contenido");
-    alert(f);
+    alert(f2);
     acum+= "<tr> <th scope='row'>"+n+"</th>"+
     "<td>"+an+"</td><td>"+bn+"</td>"+
     "<td>"+ax+"</td><td>"+fp+"</td>"+
